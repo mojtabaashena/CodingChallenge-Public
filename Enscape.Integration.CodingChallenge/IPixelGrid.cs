@@ -17,9 +17,11 @@ public interface IPixelGrid
 
 public class PixelGrid : IPixelGrid
 {
+    bool[,] points;
     public PixelGrid(int width, int height)
     {
-        throw new NotImplementedException();
+        points= new bool[width, height];
+        Width = width; Height = height;
     }
 
     public int Width { get; }
@@ -27,11 +29,12 @@ public class PixelGrid : IPixelGrid
 
     public bool Get(int x, int y)
     {
-        throw new NotImplementedException();
+        return points[x,y];
     }
 
     public void Set(int x, int y, bool value)
     {
-        throw new NotImplementedException();
+        points[x, y] = value;
     }
 }
+

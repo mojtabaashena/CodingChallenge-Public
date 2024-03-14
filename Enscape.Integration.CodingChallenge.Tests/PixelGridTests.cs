@@ -42,7 +42,7 @@ public class PixelGridTests
         var width = 100000;
         var height = 10000;
 
-        var voxelGrid = new SolutionPixelGrid(width, height);
+        var voxelGrid = new PixelGrid(width, height);
 
         var x = 500;
         var y = 500;
